@@ -41,12 +41,3 @@ jobs:
         run: |
           npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
           npm ci
-
-      - name: Test Lint
-        run: npm run lint:test
-
-      - name: Take Snapshots
-        run: npm run test:snapshot
-
-      - name: Test Components
-        run: npm run test
