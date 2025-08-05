@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/azifydev/facetec-aar/compare/v1.0.0...v1.0.1) (2025-08-05)
+
+
+### Bug Fixes
+
+* adjust readme ([#1](https://github.com/azifydev/facetec-aar/issues/1)) ([88fa0dd](https://github.com/azifydev/facetec-aar/commit/88fa0ddf95744f80b27e260607245e54e102e13a))
+
 # 1.0.0 (2025-08-05)
 
 
