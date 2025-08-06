@@ -6,13 +6,11 @@
 
 ## 📘 Visão Geral
 
-Este projeto encapsula o arquivo `.aar` da FaceTec como um **módulo Android (`com.android.library`)**. Ele permite que projetos Android ou React Native utilizem o SDK sem precisar manipular diretamente o `.aar`.
+Este projeto encapsula o arquivo `.aar` da FaceTec como um **módulo Android via Maven**. Ele permite que projetos Android ou React Native utilizem o SDK sem precisar manipular diretamente o `.aar`.
 
 Principais recursos:
 
 - ✅ Integração fácil via Git Submodule
-- ✅ Estrutura Gradle configurada para build imediato
-- ✅ Compatível com Android Gradle Plugin 8+
 - ✅ Versionamento automático via semantic-release
 - ✅ Sem publicação no npm
 
@@ -41,15 +39,25 @@ project(':facetec').projectDir = new File(rootDir, 'libs/facetec-aar/facetec')
 build.gradle:
 
 ```groovy
-    dependencies {
-        implementation project(':facetec')
+allprojects {
+    repositories {
+        maven {
+            url uri('external/facetec-aar/build/repo')
+        }
+        google()
+        mavenCentral()
     }
+}
+
 ```
 
-## 🧪 Local build test
+app/build.gradle:
 
-```bash
-./gradlew build
+```groovy
+dependencies {
+    implementation 'com.azify.facetec:facetec-sdk:9.7.47'
+}
+
 ```
 
 ## 🧬 Clonagem com Submódulo
@@ -95,14 +103,6 @@ chore: atualiza dependências do Gradle
 ## 🧰 Manutenção
 
 ##### SDK atualmente integrado: FaceTec 9.7.47
-
-##### Para atualizar o SDK:
-
-1. Extraia o novo .aar
-
-2. Substitua o conteúdo de facetec/src/main/
-
-3. Faça commit com mensagem semântica (feat: atualiza para versão X.Y.Z)
 
 [![Release](https://img.shields.io/github/v/release/azifydev/facetec-aar?label=vers%C3%A3o&style=flat-square)](https://github.com/azifydev/facetec-aar/releases)
 [![Build](https://img.shields.io/github/actions/workflow/status/azifydev/facetec-aar/release.yml?label=build&style=flat-square)](https://github.com/azifydev/facetec-aar/actions)
