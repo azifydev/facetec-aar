@@ -1,110 +1,96 @@
-# facetec-aar
+# FaceTec AAR
 
-> 📦 Wrapper Android para o SDK `.aar` da [FaceTec](https://dev.facetec.com/), preparado como módulo reutilizável e versionado automaticamente com [semantic-release](https://semantic-release.gitbook.io/semantic-release/).
+> 📦 Android wrapper for the [FaceTec](https://dev.facetec.com/) `.aar` SDK, prepared as a reusable module and automatically versioned with [semantic-release](https://semantic-release.gitbook.io/semantic-release/).
 
 ---
 
-## 📘 Visão Geral
+## 📘 Overview
 
-Este projeto encapsula o arquivo `.aar` da FaceTec como um **módulo Android via Maven**. Ele permite que projetos Android ou React Native utilizem o SDK sem precisar manipular diretamente o `.aar`.
+This project encapsulates the FaceTec `.aar` file as an **Android module via Maven**. It allows Android or React Native projects to use the SDK without needing to directly manipulate the `.aar`.
 
-Principais recursos:
+Key features:
 
-- ✅ Integração fácil via Git Submodule
-- ✅ Versionamento automático via semantic-release
-- ✅ Sem publicação no npm
+- ✅ Easy integration via Git Submodule
+- ✅ Automatic versioning via `semantic-release`
 
-## 🚀 Como Usar em um Projeto
+## 🚀 How to Use in a Project
 
-### ✅ Pré-requisitos
+### ✅ Prerequisites
 
-- Projeto Android ou React Native com suporte a múltiplos módulos
-- Git com submodules habilitado
+- Android or React Native project with multi-module support
+- Git with submodules enabled
 
-### 📥 Adicionando como Submódulo
+### 📥 Adding as Submodule
 
 ```bash
-git submodule add git@github.com:azifydev/facetec-aar.git libs/facetec-aar
+git submodule add git@github.com:azifydev/facetec-aar.git external/facetec-aar
 ```
 
-## ⚙️ Configuração no Gradle
+A folder called `external` will be created in your project. Inside it, there will be another folder called `facetec-aar`, which contains the extracted contents of the FaceTec `.aar` file.
 
-settings.gradle:
+## ⚙️ Gradle Configuration
 
-```groovy
-include ':facetec'
-project(':facetec').projectDir = new File(rootDir, 'libs/facetec-aar/facetec')
-```
-
-build.gradle:
+`build.gradle`:
 
 ```groovy
-allprojects {
-    repositories {
-        maven {
-            url uri('external/facetec-aar/build/repo')
-        }
-        google()
-        mavenCentral()
+repositories {
+    // ...
+    maven {
+        url = uri("../external/facetec-aar/build/repo")
     }
+    google()
+    mavenCentral()
+    mavenLocal()
 }
 
-```
+// ...
 
-app/build.gradle:
-
-```groovy
 dependencies {
+    // ...
     implementation 'com.azify.facetec:facetec-sdk:9.7.47'
 }
-
 ```
 
-## 🧬 Clonagem com Submódulo
+## 🧬 Cloning with Submodule
 
 ```bash
 git clone --recurse-submodules git@github.com:azifydev/facetec-aar.git
 ```
 
-ou caso já tenha clonado:
+or if you have already cloned:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## 📦 Versionamento Automático
+## ⚙️ Troubleshooting
 
-#### Este repositório utiliza o semantic-release para gerenciar versões, changelogs e GitHub Releases com base em mensagens de commit semânticas.
+### Build error when external isn't found
 
-### 🔧 Configuração
+In some cases, the external directory isn't found during build. To resolve this error, you must add `mavenLocal()` to your `build.gradle` repositories block.
 
-- Releases automáticos na branch main
+`build.gradle`:
 
-- Tags no formato vX.Y.Z
-
-- Atualização do CHANGELOG.md
-
-- Versão do package.json também atualizada (sem publicação no npm)
-
-### 📝 Exemplo de mensagens válidas de Commit:
-
-```
-feat: adiciona suporte ao novo build do SDK
+```groovy
+repositories {
+    // ...
+    mavenLocal()
+}
 ```
 
-```
-fix: adiciona correção de segurança
+`app/build.gradle`:
+
+```groovy
+repositories {
+    // ...
+    mavenLocal()
+}
 ```
 
+### Git submodule doesn't updated
+
+Your external folder sometimes doesn't reflect updates when the submodule is updated. To fix this problem, run:
+
+```bash
+git submodule update --recursive --remote --merge
 ```
-chore: atualiza dependências do Gradle
-```
-
-## 🧰 Manutenção
-
-##### SDK atualmente integrado: FaceTec 9.7.47
-
-[![Release](https://img.shields.io/github/v/release/azifydev/facetec-aar?label=vers%C3%A3o&style=flat-square)](https://github.com/azifydev/facetec-aar/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/azifydev/facetec-aar/release.yml?label=build&style=flat-square)](https://github.com/azifydev/facetec-aar/actions)
-[![Last Commit](https://img.shields.io/github/last-commit/azifydev/facetec-aar?style=flat-square)](https://github.com/azifydev/facetec-aar/commits/main)
-[![License](https://img.shields.io/badge/license-private-red?style=flat-square)](#)
