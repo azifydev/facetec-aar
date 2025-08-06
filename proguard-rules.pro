@@ -1,2 +1,0 @@
--keep class com.facetec.** { *; }
--dontwarn com.facetec.**
