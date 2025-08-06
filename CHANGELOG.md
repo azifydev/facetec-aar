@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/azifydev/facetec-aar/compare/v1.0.2...v1.0.3) (2025-08-06)
+
+
+### Bug Fixes
+
+* adjust maven repo local on build ([554c972](https://github.com/azifydev/facetec-aar/commit/554c972745f3a385a82c21be995b4b70359ac0a2))
+
 ## [1.0.2](https://github.com/azifydev/facetec-aar/compare/v1.0.1...v1.0.2) (2025-08-06)
 
 
