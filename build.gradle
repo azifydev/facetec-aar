@@ -1,27 +1,27 @@
 plugins {
-    id 'maven-publish'
+	id 'maven-publish'
 }
 
 group = 'com.azify.facetec'
 version = '9.7.47'
 
 publishing {
-    publications {
-        mavenAar(MavenPublication) {
-            groupId = 'com.azify.facetec'
-            artifactId = 'facetec-sdk'
-            version = '9.7.47'
+	publications {
+		mavenAar(MavenPublication) {
+			groupId = 'com.azify.facetec'
+			artifactId = 'facetec-sdk'
+			version = '9.7.47'
 
-            artifact("libs/facetec-sdk-9.7.47.aar") {
-                extension 'aar'
-            }
-        }
-    }
+			artifact("libs/facetec-sdk-9.7.47.aar") {
+				extension 'aar'
+			}
+		}
+	}
 
-    repositories {
-        maven {
-            name = "localRepo"
-            url = uri("${buildDir}/repo")
-        }
-    }
+	repositories {
+		maven {
+			name = "localRepo"
+			url = uri("${buildDir}/repo")
+		}
+	}
 }
