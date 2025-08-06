@@ -87,6 +87,21 @@ repositories {
 }
 ```
 
+In other cases, the `build` folder inside `external/facetec-aar` wasn't generated. For generate this folder, inside `external/facetec-aar` run this command:
+
+```bash
+gradle publish
+```
+
+If you haven't gradle installed, install it using this command:
+
+```bash
+brew install gradle
+
+# Use this command to check if it was installed
+gradle -v
+```
+
 ### Git submodule doesn't updated
 
 Your external folder sometimes doesn't reflect updates when the submodule is updated. To fix this problem, run:
