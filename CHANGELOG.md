@@ -3,6 +3,19 @@
 
 ### Bug Fixes
 
+* adjust action release ([d529736](https://github.com/azifydev/facetec-aar/commit/d529736570a43f492a9ac37941f57a92f07cf30d))
+* adjust changelog ([5733ebc](https://github.com/azifydev/facetec-aar/commit/5733ebce60566ab79220945ccc42c075d362d2dc))
+* adjust env ([609db1a](https://github.com/azifydev/facetec-aar/commit/609db1a793fd38535a8f608fa5d648f64086307c))
+* adjust semantic release config ([e0d6302](https://github.com/azifydev/facetec-aar/commit/e0d6302019569565a8612e83779d1ed0d89634f8))
+* re-add workflows ([#7](https://github.com/azifydev/facetec-aar/issues/7)) ([28bfeff](https://github.com/azifydev/facetec-aar/commit/28bfefffb17eeefd5e964982942600a2a8a86824))
+* remove action release ([aab52d1](https://github.com/azifydev/facetec-aar/commit/aab52d1c617c6d15aae68f67f53a3e9839b4ce4a))
+* remove ci ([36f88cd](https://github.com/azifydev/facetec-aar/commit/36f88cdff0b5bbdea32ede11ae4122dcc40fc7cb))
+
+## [1.0.6](https://github.com/azifydev/facetec-aar/compare/v1.0.5...v1.0.6) (2025-08-07)
+
+
+### Bug Fixes
+
 * adjust changelog ([5733ebc](https://github.com/azifydev/facetec-aar/commit/5733ebce60566ab79220945ccc42c075d362d2dc))
 * adjust env ([609db1a](https://github.com/azifydev/facetec-aar/commit/609db1a793fd38535a8f608fa5d648f64086307c))
 * adjust semantic release config ([e0d6302](https://github.com/azifydev/facetec-aar/commit/e0d6302019569565a8612e83779d1ed0d89634f8))
