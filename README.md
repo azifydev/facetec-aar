@@ -16,37 +16,36 @@ Com o pacote buildado e funcionando, na biblioteca da Aziface adicione o seguint
 
 ```groovy
 repositories {
-// ...
-maven { url '<https://jitpack.io>' }
+  // ...
+  maven { url '<https://jitpack.io>' }
 }
 ```
 
 ```groovy
 dependencies {
-// ...
-implementation 'com.github.USER_GITHUB:REPOSITORY:LIBRARY_VERSION_IN_JITPACK'
+  // ...
+  implementation 'com.github.USER_GITHUB:REPOSITORY:LIBRARY_VERSION_IN_JITPACK'
 }
 ```
 
 ### Pra finalizar, em seu app, adicione em `android/build.gradle` e `android/app/build.gradle` o seguinte repositório maven:
 
 ```groovy
-
 // android/build.gradle
 buildscript {
-// ...
-repositories {
-// ...
-maven { url 'https://jitpack.io' }
+  // ...
+  repositories {
+  // ...
+  maven { url 'https://jitpack.io' }
  }
 }
 ```
 
 ```groovy
 // android/app/build.gradle
-repositories {
-// ...
-maven { url 'https://jitpack.io' }
+ repositories {
+  // ...
+  maven { url 'https://jitpack.io' }
 }
 ```
 
