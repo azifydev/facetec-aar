@@ -1,8 +1,8 @@
 {
   "name": "@azify/facetec-aar",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "scripts": {
-    "release": "dotenv -- npx semantic-release --ci"
+    "release": "dotenv -- npx semantic-release --no-ci --debug"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
