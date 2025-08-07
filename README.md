@@ -8,7 +8,7 @@
 
 Este projeto encapsula o arquivo `.aar` da FaceTec como **uma bibioteca via Jitpack**. Ele permite que projetos Android ou React Native utilizem o SDK sem precisar manipular diretamente o `.aar`.
 
-## 🚀 Como Usar em um Projeto
+## 🚀 Como usar em um Projeto
 
 Com o pacote buildado e funcionando, na biblioteca da Aziface adicione o seguinte trecho de código em android/build.gradle:
 
