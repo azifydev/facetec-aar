@@ -31,6 +31,8 @@ jobs:
 
       - name: PR Semantic Release Check
         uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_V2 }}
 
       - name: Install dependencies
         run: npm i
