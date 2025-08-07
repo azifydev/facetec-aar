@@ -23,4 +23,6 @@ jobs:
         run: npm ci
 
       - name: Semantic Release
-        run: npx semantic-release --ci
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN_V2 }}
+          run: npx semantic-release --ci
