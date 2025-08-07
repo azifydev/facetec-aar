@@ -1,0 +1,9 @@
+## [1.0.5](https://github.com/azifydev/facetec-aar/compare/v1.0.4...v1.0.5) (2025-08-07)
+
+
+### Bug Fixes
+
+* action release auth ([f561830](https://github.com/azifydev/facetec-aar/commit/f561830c81d0cdf570fab6febea189cffbcb8717))
+* action release identification ([2cf3e2f](https://github.com/azifydev/facetec-aar/commit/2cf3e2f4c1ca7b78375f4ebed55e0fe5c3e49f10))
+* adjust pom.xml ([77d58b0](https://github.com/azifydev/facetec-aar/commit/77d58b0a4b7f67dd08c01dc520ce9ade3f8cb053))
+* adjust release message ([#3](https://github.com/azifydev/facetec-aar/issues/3)) ([cba7e74](https://github.com/azifydev/facetec-aar/commit/cba7e7419a5c8c1d24568c6518e815be520c5694))
