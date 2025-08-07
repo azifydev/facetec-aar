@@ -1,4 +1,4 @@
-# facetec-aar
+# FaceTec AAR
 
 > 📦 Wrapper Android para o SDK `.aar` da [FaceTec](https://dev.facetec.com/), preparado como módulo reutilizável e versionado automaticamente com [semantic-release](https://semantic-release.gitbook.io/semantic-release/).
 
