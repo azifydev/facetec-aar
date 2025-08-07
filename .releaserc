@@ -2,7 +2,6 @@
   "branches": [
     "main"
   ],
-  "dryRun": false,
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -15,6 +14,13 @@
           "CHANGELOG.md"
         ],
         "message": "release: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false,
+        "pkgRoot": "."
       }
     ]
   ]
