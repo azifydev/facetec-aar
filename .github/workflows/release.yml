@@ -25,4 +25,6 @@ jobs:
           npm ci
 
       - name: Publish Release
-        run: npm run release
+        run: npx semantic-release --no-ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_V2 }}
