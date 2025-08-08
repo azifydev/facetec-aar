@@ -15,7 +15,7 @@ on:
 
 jobs:
   common:
-    name: Lint and Tests
+    name: Mergeability
     runs-on: ubuntu-latest
 
     steps:
