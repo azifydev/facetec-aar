@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/azifydev/facetec-aar/compare/v1.0.6...v1.1.0) (2025-09-03)
+
+
+### Features
+
+* update facetec sdk ([628a4a4](https://github.com/azifydev/facetec-aar/commit/628a4a42d9c84437fd83692c211464cfdba13ae5))
+
 ## [1.0.6](https://github.com/azifydev/facetec-aar/compare/v1.0.5...v1.0.6) (2025-08-07)
 
 
