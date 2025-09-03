@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.azify.facetec</groupId>
   <artifactId>facetec-sdk</artifactId>
-  <version>9.7.47</version>
+  <version>10.0.8</version>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
