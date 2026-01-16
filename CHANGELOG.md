@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/azifydev/facetec-aar/compare/v1.1.0...v1.2.0) (2026-01-16)
+
+
+### Features
+
+* update SDK AAR from 10.0.8 to 10.0.31 ([#9](https://github.com/azifydev/facetec-aar/issues/9)) ([78934ec](https://github.com/azifydev/facetec-aar/commit/78934ec77a3068bdda01a6058dbc94cc2f198206))
+
 # [1.1.0](https://github.com/azifydev/facetec-aar/compare/v1.0.6...v1.1.0) (2025-09-03)
 
 
