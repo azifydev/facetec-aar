@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/azifydev/facetec-aar/compare/v1.2.0...v1.3.0) (2026-02-06)
+
+
+### Features
+
+* bump `.aar` from `10.0.31` to `10.0.34` ([#10](https://github.com/azifydev/facetec-aar/issues/10)) ([aab815b](https://github.com/azifydev/facetec-aar/commit/aab815bd27782d9291efd1200dcbe643190e559e))
+
 # [1.2.0](https://github.com/azifydev/facetec-aar/compare/v1.1.0...v1.2.0) (2026-01-16)
 
 
